@@ -23,94 +23,102 @@
 </head>
 
 <body style="background-color: white;">
- <div class="container">
-  <div class="header">
-    <nav class="navbar navbar-expand-lg " style="background-color: #ff6d00;">
-      <a class="navbar-brand" href="#">
-        <img
-          src="https://4.bp.blogspot.com/-VBLoxidiFas/WbmXLa_fQdI/AAAAAAAACpQ/ZgXq0IXHm-gmRp35f7WOYRZxVXqrAsjAQCLcBGAs/s1600/Logo%2Bdel%2BSENA%2BCEET%2BNegro.png"
-          width="480" height="130" class="d-inline-block align-top" alt="" loading="lazy">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" style="align-items: center; justify-content: center; display: block;" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" style="color: white;" href="index.html">Pagina principal <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="iniciarsesion.html">Iniciar Sesion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="https://electricidadelectronicaytelecomu.blogspot.com/">Blog-CEET</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Conoce mas
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Redes</a>
-              <a class="dropdown-item" href="#">Trabaja con Nosotros</a>
-              <a class="dropdown-item" href="#">Acerca de</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <div class="container">
+    <div class="header">
+      <nav class="navbar navbar-expand-lg " style="background-color: #ff6d00;">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://4.bp.blogspot.com/-VBLoxidiFas/WbmXLa_fQdI/AAAAAAAACpQ/ZgXq0IXHm-gmRp35f7WOYRZxVXqrAsjAQCLcBGAs/s1600/Logo%2Bdel%2BSENA%2BCEET%2BNegro.png"
+            width="480" height="130" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="align-items: center; justify-content: center; display: block;"
+          id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="index.html">Pagina principal <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="iniciarsesion.html">Iniciar Sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;"
+                href="https://electricidadelectronicaytelecomu.blogspot.com/">Blog-CEET</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdownMenuLink"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Conoce mas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Redes</a>
+                <a class="dropdown-item" href="#">Trabaja con Nosotros</a>
+                <a class="dropdown-item" href="#">Acerca de</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
-</div>
   <div class="container">
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-6"
-     src="https://i.ibb.co/JccyN9b/71ff682bd76bdbffba7678191f59e5c5.png" alt="71ff682bd76bdbffba7678191f59e5c5"  width="72"
-        height="72">
+      <img class="d-block mx-auto mb-6" src="https://i.ibb.co/JccyN9b/71ff682bd76bdbffba7678191f59e5c5.png"
+        alt="71ff682bd76bdbffba7678191f59e5c5" width="72" height="72">
       <h2>Registro Sistema de Gestion de Horarios</h2>
       <p class="lead">En esta herramienta podras ver el horario asignado al area de teleinformatica del
         servicio Nacional de Aprendizaje.<br /> Podras ver el horario del programa, ficha y grupo. </p>
+        <p class="lead">Registra tus datos de contacto y personales  </p>
     </div>
   </div>
 
 
   <div class="container">
-    <div class="row-center" >
+    <div class="row-center">
       <div class="col-md-12 ">
         <h4 class="mb-3 text-center">Registrate</h4>
-        <form action="php/registro.php" class="needs-validation" novalidate>
+        <form action="php/registro.php" method="POST" class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="firstName">Primer Nombre</label>
-              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="primernombre" id="primernombre" placeholder="" value="" required>
+              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="primernombre"
+                id="primernombre" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Escribe tu primer nombre.
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="lastName">Segundo Nombre</label>
-              <input type="text"  style="background-color:#cfd8dc;"class="form-control" name="segundonombre" id="segundonombre" placeholder="" value="">
+              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="segundonombre"
+                id="segundonombre" placeholder="" value="">
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="firstName">Primer Apellido</label>
-              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="primerapellido" id="primerapellido" placeholder="" value="" required>
+              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="primerapellido"
+                id="primerapellido" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Escribe tu primer Apellido.
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="lastName">Segundo Apellido</label>
-              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="segundoapellido" id="segundoapellido" placeholder="" value="">
+              <input type="text" style="background-color:#cfd8dc;" class="form-control" name="segundoapellido"
+                id="segundoapellido" placeholder="" value="">
             </div>
           </div>
 
 
           <div class="row-mb">
             <label for="email">Correo Institucional <span class="text-muted">(Requerido)</span></label>
-            <input type="email" style="background-color:#cfd8dc;" class="form-control" name="email_usuario" id="email_usuario" placeholder="ejemplo@misena.edu.co" required>
+            <input type="email" style="background-color:#cfd8dc;" class="form-control" name="email_usuario"
+              id="email_usuario" placeholder="ejemplo@misena.edu.co" required>
             <div class="invalid-feedback">
               Escribe el correo institucional.
             </div>
@@ -118,11 +126,13 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="password">Contraseña</label>
-                <input type="password" style="background-color:#cfd8dc;" class="form-control" name="contraseña" id="contraseña" placeholder="" value="">
+                <input type="password" style="background-color:#cfd8dc;" class="form-control" name="contraseña"
+                  id="contraseña" placeholder="" value="">
               </div>
               <div class="col-md-6 mb-3">
                 <label for="password"> Confirme Contraseña</label>
-                <input type="password" style="background-color:#cfd8dc;" class="form-control" id="password" placeholder="" value="">
+                <input type="password" style="background-color:#cfd8dc;" class="form-control" id="password"
+                  placeholder="" value="">
               </div>
             </div>
           </div>
@@ -131,7 +141,8 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="text">Telefono</label>
-              <input type="number" style="background-color:#cfd8dc;" class="form-control" name="telefono" id="telefono" placeholder="Telefono Contacto" required>
+              <input type="number" style="background-color:#cfd8dc;" class="form-control" name="telefono" id="telefono"
+                placeholder="Telefono Contacto" required>
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
@@ -149,35 +160,49 @@
               </div>
 
             </div>
-           
-            <div class="row-center">
-              <div class="col-md-12">
-              <div class=" containerbtn-group " role="group">
-                <label for="number">Tipo Documento</label>
-                <div>
-                  <select class="custom-select" style="background-color:#cfd8dc;" name="nombre_documento" id="nombre_documento">
-                    <option selected>Seleccione</option>
-                    <option value="1">Cedula Ciudadania</option>
-                    <option value="2">Tarjeta de Identidad</option>
-                    <option value="3">Cedula Extranjera</option>
-                    <option value="4">Pasaporte</option>
-                    <option value="5">Numero Unico de Identificacion </option>
-                  </select>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mb-6">
+                  <div class=" containerbtn-group " role="group">
+                    <label for="number">Tipo Documento</label>
+                    <div>
+                      <select class="custom-select" style="background-color:#cfd8dc;" name="nombre_documento"
+                        id="nombre_documento">
+                        <option selected>Seleccione</option>
+                        <option value="1">Cedula Ciudadania</option>
+                        <option value="2">Tarjeta de Identidad</option>
+                        <option value="3">Cedula Extranjera</option>
+                        <option value="4">Pasaporte</option>
+                        <option value="5">Numero Unico de Identificacion </option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-              </div>
-              
-                <div class=" col-4">
+
+
+                <div class=" col-md-4">
                   <label for="number">Numero documento de Identificacion</label>
-                  <input type="text" class="form-control" style="background-color:#cfd8dc;" name="numero_documento" id="numero_documento" placeholder="Nuemro de identificacion"
-                    required>
+                  <input type="text" class="form-control" style="background-color:#cfd8dc;" name="numero_documento"
+                    id="numero_documento" placeholder="Numero de identificacion" required>
                 </div>
-          </div>
+              </div>
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label href="#" class="form-check-label" for="gridCheck">
+                      Acepto terminos y Condiciones
+                    </label>
+                  </div>
+                </div>
+              
+            </div>
 
 
-          <hr class="mb-4">
-          <a href="pagina2registro.html" class="btn btn-primary btn-lg btn-block" type="submit">Continuar</a>
+            <hr class="mb-4">
+            <a href="pagina2registro.html" class="btn btn-primary btn-lg btn-block" name="accion"
+              type="submit">Continuar</a>
         </form>
       </div>
     </div>
